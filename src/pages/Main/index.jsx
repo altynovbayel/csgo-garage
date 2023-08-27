@@ -6,6 +6,7 @@ const Main = () => {
   return (
     <div className={c.main}>
       <Components.Winners/>
+      <Components.Cases/>
     </div>
   )
 }

@@ -1,0 +1,52 @@
+.all_cases {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 40px;
+
+  .case {
+    width: 250px;
+    background: rgb(45, 14, 76);
+    background: linear-gradient(128deg, rgba(45, 14, 76, 1) 0%, rgba(24, 8, 56, 1) 50%, rgba(24, 8, 56, 1) 51%, rgba(45, 14, 76, 1) 100%);
+    padding-top: 20px;
+    padding-left: 35px;
+    padding-bottom: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+    cursor: pointer;
+    transition: .5s;
+    border: 1px solid black;
+
+    &:hover {
+      border: 1px solid gold;
+      background: rgb(60, 27, 51);
+      background: linear-gradient(128deg, rgba(60, 27, 51, 1) 0%, rgba(24, 8, 56, 1) 46%, rgba(58, 26, 51, 1) 100%);
+
+      .price {
+        p {
+          border: 1px solid gold;
+        }
+      }
+    }
+
+    .price {
+      width: 80px;
+      margin-bottom: 30px;
+
+      p {
+        transition: .5s;
+        border: 1px solid #9D33B8;
+        box-shadow: 0 0 5px #9D33B8;
+        display: flex;
+        justify-content: center;
+        border-radius: 10px;
+        padding: 9px 0;
+      }
+    }
+
+    .image {
+      margin-bottom: 30px;
+    }
+  }
+}

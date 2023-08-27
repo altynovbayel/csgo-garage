@@ -1,0 +1,25 @@
+.nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 35px;
+
+  ul {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    li {
+      font-size: 18px;
+      padding: 17px 40px;
+      border: 1px solid #9D33B8;
+      box-shadow: 0 0 5px #9D33B8;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: .5s;
+      &:hover {
+        color: #9D33B8;
+        box-shadow: 0 0 10px #9D33B8;
+      }
+    }
+  }
+}

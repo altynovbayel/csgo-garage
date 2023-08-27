@@ -8,6 +8,7 @@ function App() {
       <Components.Navbar/>
       <Components.Weapons/>
       <Pages.Main/>
+      <Components.Footer/>
     </div>
   );
 }
