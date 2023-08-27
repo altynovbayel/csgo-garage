@@ -1,0 +1,51 @@
+.user {
+  width: 150px;
+  background-color: #180838;
+  box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+  padding-top: 10px;
+  padding-left: 12px;
+  padding-bottom: 15px;
+  border-radius: 20px;
+
+  .card {
+    width: 130px;
+    height: 130px;
+    position: relative;
+    background-color: #331052;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    .neonCircle {
+      width: 65px;
+      height: 65px;
+      background-color: transparent;
+      border: 2px solid #fff;
+      border-radius: 50%;
+      box-shadow: 0 0 10px #9D33B8;
+
+      img {
+        position: absolute;
+        top: 20%;
+        left: 40%;
+        transform: translateX(-50%);
+        object-fit: cover;
+      }
+    }
+  }
+  .user_info{
+    margin-top: 15px;
+  }
+  .weapon_type{
+    margin-top: 25px;
+  }
+  .summ{
+    margin-top: 25px;
+  }
+  .day{
+    color: #D77022;
+    margin-top: 25px;
+  }
+}
