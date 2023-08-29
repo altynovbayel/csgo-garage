@@ -1,9 +1,9 @@
 import React from 'react'
 import c from './AboutBlock.module.scss'
 import {BiBriefcase} from 'react-icons/bi'
-import {AiOutlineFile} from 'react-icons/ai'
+import {AiOutlineFile, AiOutlineUser} from 'react-icons/ai'
 import {RiArrowUpDoubleFill} from 'react-icons/ri'
-
+import {FiUsers} from 'react-icons/fi'
 const AboutBlock = () => {
   return (
     <div className={c.about}>
@@ -36,7 +36,7 @@ const AboutBlock = () => {
       </div>
       <div className={c.block}>
         <div className={c.icon}>
-          <BiBriefcase/>
+          <FiUsers/>
         </div>
         <div className={c.about_text}>
           <p>Пользователи</p>
@@ -45,7 +45,7 @@ const AboutBlock = () => {
       </div>
       <div className={c.block}>
         <div className={c.icon}>
-          <BiBriefcase/>
+          <AiOutlineUser/>
         </div>
         <div className={c.about_text}>
           <p>Онлайн</p>
