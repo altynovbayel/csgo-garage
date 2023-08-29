@@ -10,17 +10,17 @@ const Cases = () => {
       <button>
         Все преддожения
       </button>
-      <div className={c.container}>
+      <div className={c.container_1}>
         <Components.Title text={'Бесплатные кейсы'}/>
         <NavButtons/>
         <AllCases/>
       </div>
-      <div className={c.container}>
+      <div className={c.container_2}>
         <Components.Title text={'Кейсы по раритетности'}/>
         <NavButtons/>
         <AllCases/>
       </div>
-      <div className={c.container}>
+      <div className={c.container_3}>
         <Components.Title text={'Бесплатные кейсы'}/>
         <NavButtons/>
         <AllCases/>

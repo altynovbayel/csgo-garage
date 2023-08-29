@@ -43,11 +43,20 @@
     opacity: 0;
     z-index: -1;
     transition: .5s;
-    width: 150px;
-    height: 200px;
+    width: 165px;
+    height: 190px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    >svg{
+      position: absolute;
+      top: -18px;
+      font-size: 20px;
+      
+      path{
+        color: #9830B3;
+      }
+    }
     >img {
       width: 100px;
     }
@@ -57,9 +66,13 @@
     .user_name {
       display: flex;
       justify-content: center;
+      align-items: center;
       gap: 10px;
       border-top: 1px solid #442F6F;
       padding-top: 10px;
+      p{
+        padding: 0;
+      }
       img {
         width: 35px;
         height: 35px;

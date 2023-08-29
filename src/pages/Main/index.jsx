@@ -7,6 +7,7 @@ const Main = () => {
     <div className={c.main}>
       <Components.Winners/>
       <Components.Cases/>
+      <Components.AboutBlock/>
     </div>
   )
 }

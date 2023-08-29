@@ -4,6 +4,7 @@ import Winners from "./Winners";
 import Title from "./Title";
 import Cases from "./Cases";
 import Footer from "./Footer";
+import AboutBlock from "./AboutBlock";
 export const Components = {
   Navbar,
   Weapons,
@@ -11,4 +12,5 @@ export const Components = {
   Title,
   Cases,
   Footer,
+  AboutBlock
 }

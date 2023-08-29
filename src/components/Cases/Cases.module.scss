@@ -9,8 +9,23 @@
     border-radius: 20px;
     font-size: 18px;
   }
-  .container {
+  >div {
     max-width: 1360px;
     margin: 45px auto 0
+  }
+  .container_1{
+    background-image: url('../../images/back-img-3.png');
+    background-position: top right 100px;
+    background-repeat: no-repeat;
+  }
+  .container_2{
+    background-image: url('../../images/back-img-5.png');
+    background-position: top left 100px;
+    background-repeat: no-repeat;
+  }
+  .container_3{
+    background-image: url('../../images/back-img-1.png');
+    background-position: top right 300px;
+    background-repeat: no-repeat;
   }
 }

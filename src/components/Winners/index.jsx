@@ -2,6 +2,7 @@ import React from 'react'
 import c from './Winners.module.scss'
 import WinnerUser from './WinnerUser'
 import ContestCard from './ContestCard'
+import backIMG1 from '../../images/back-img-1.png'
 
 const Winners = () => {
   return (
@@ -16,6 +17,7 @@ const Winners = () => {
           }
         </div>
         <div className={c.contest}>
+          {/* <img src={backIMG1} alt="back" loading='lazy'/> */}
           {
             new Array(2).fill().map((_, id) => (
               <ContestCard key={id}/>

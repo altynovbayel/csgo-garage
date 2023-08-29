@@ -37,6 +37,14 @@
   }
   .user_info{
     margin-top: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    img{
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+    }
   }
   .weapon_type{
     margin-top: 25px;

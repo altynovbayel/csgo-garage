@@ -13,13 +13,26 @@
 
   .container {
     max-width: 1360px;
-    margin: 45px auto 0;
+    margin: 0 auto 0;
     display: flex;
     gap: 125px;
+    
     .winner_users {
       display: flex;
       align-items: center;
       gap: 40px;
+      background-image: url('../../../src//images/back-img-2.png');
+      background-repeat: no-repeat;
+      background-position: bottom right;
+      padding-top: 100px;
+      padding-bottom: 100px;
+    }
+    .contest{
+      background-image: url('../../../src//images/back-img-1.png');
+      background-repeat: no-repeat;
+      background-position: top left;
+      padding-top: 100px;
+      padding-bottom: 100px;
     }
   }
 }

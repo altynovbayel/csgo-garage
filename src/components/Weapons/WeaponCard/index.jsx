@@ -3,6 +3,7 @@ import c from './WeaponCard.module.scss'
 import weapon from '../../../images/weapon.png'
 import caseImg from '../../../images/case-img.png'
 import graffit from '../../../images/graffit.png'
+import {BsFillTriangleFill} from 'react-icons/bs'
 
 const WeaponCard = () => {
   return (
@@ -11,6 +12,7 @@ const WeaponCard = () => {
         <img src={weapon} alt="weapon" loading='lazy'/>
       </div>
       <div className={c.about}>
+        <BsFillTriangleFill/>
         <img src={caseImg} alt="img" loading='lazy'/>
         <p>
           Desert Eagle

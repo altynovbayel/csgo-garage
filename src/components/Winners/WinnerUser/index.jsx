@@ -1,6 +1,7 @@
 import React from 'react'
 import c from './WinnerUser.module.scss'
 import weapon from '../../../images/winner-weapon.png'
+import graffit from '../../../images/graffit.png'
 
 const WinnerUser = () => {
   return (
@@ -11,7 +12,7 @@ const WinnerUser = () => {
         </div>
       </div>
       <div className={c.user_info}>
-        <img src="" alt="" />
+        <img src={graffit} alt="" />
         <div className={c.user_name}>
           <p>
             WhiteFoxxxx
