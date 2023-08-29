@@ -18,9 +18,48 @@
 
   .buttons {
     display: flex;
+    align-items: center;
     gap: 30px;
-    .balance, .auth{
+
+    .balance,
+    .auth {
       display: flex;
+      align-items: center;
+      gap: 10px;
+      cursor: pointer;
+
+      .icon {
+        border: 1px solid #fff;
+        box-shadow: 0 0 10px #fff;
+        border-radius: 50%;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        svg {
+          width: 26px;
+          height: 26px;
+        }
+      }
+    }
+
+    .language {
+      display: flex;
+      align-items: center;
+      gap: 10px;    
+      cursor: pointer;
+      img {
+        width: 20px;
+        height: 14px;
+
+      }
+
+      div {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+      }
     }
   }
 }

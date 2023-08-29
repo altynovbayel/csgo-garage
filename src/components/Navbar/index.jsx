@@ -2,6 +2,11 @@ import React from 'react'
 import c from './Navbar.module.scss'
 import LinksItem from './LInksItem'
 import logo from '../../images/logo.png'
+import { navLinks } from '../../utils'
+import {AiOutlineUser} from 'react-icons/ai'
+import {LiaWalletSolid} from 'react-icons/lia'
+import {MdKeyboardArrowDown} from 'react-icons/md'
+import flag from '../../images/russia-flag.png'
 
 
 const Navbar = () => {
@@ -10,8 +15,8 @@ const Navbar = () => {
       <div className={c.container}>
         <div className={c.links}>
           {
-            new Array(3).fill().map((_, id) => (
-              <LinksItem key={id} />
+            navLinks.map((item, id) => (
+              <LinksItem key={id} {...item}/>
             ))
           }
         </div>
@@ -20,17 +25,29 @@ const Navbar = () => {
         </div>
         <div className={c.buttons}>
           <div className={c.balance}>
-            <img src="" alt="" />
+            <div className={c.icon}>
+              <LiaWalletSolid/>
+            </div>
             <div className={c.balance_title}>
+              
               <p>16 909 руб.</p>
               <span>Баланс</span>
             </div>
           </div>
           <div className={c.auth}>
-            <img src="" alt="" />
+            <div className={c.icon}>
+              <AiOutlineUser/>
+            </div>
             <div className={c.balance_title}>
               <p>Вход / Регистрация</p>
               <span>Личный кабинет</span>
+            </div>
+          </div>
+          <div className={c.language}>
+            <img src={flag} alt="flag" loading='lazy'/>
+            <div>
+              <p>RU</p>
+              <MdKeyboardArrowDown/>
             </div>
           </div>
         </div>
