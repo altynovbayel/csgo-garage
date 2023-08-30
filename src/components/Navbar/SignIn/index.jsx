@@ -3,7 +3,7 @@ import c from './SignIn.module.scss'
 import x from '../../../images/X.svg'
 
 
-const SignIn = ({setModalState, setSignUpView}) => {
+const SignIn = ({setModalState, setSignUpView, setRecover}) => {
   return (
      <div className={c.modal}>
       <div className={c.background} onClick={() => setModalState(false)}></div>
@@ -23,7 +23,10 @@ const SignIn = ({setModalState, setSignUpView}) => {
         <input type='password' placeholder='Пароль'/>
 
         <div className={c.reset_pass}>
-          <p >Забыли пароль?</p>
+          <p onClick={() => {
+            setRecover(true)
+            setModalState(false)
+          }}>Забыли пароль?</p>
         </div>
         <button>Отправить</button>
       </div>

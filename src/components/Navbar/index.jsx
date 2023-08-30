@@ -9,11 +9,14 @@ import {MdKeyboardArrowDown} from 'react-icons/md'
 import flag from '../../images/russia-flag.png'
 import SignUp from './SignUp'
 import SignIn from './SignIn'
+import RecoverPass from './RecoverPass'
 
 
 const Navbar = () => {
   const [signUpView, setSignUpView] = React.useState(false)
   const [signInView, setSignInView] = React.useState(false)
+  const [recoverView, setRecoverView] = React.useState(false)
+
 
   return (
     <>
@@ -77,7 +80,10 @@ const Navbar = () => {
         signUpView ? <SignUp setModalState={setSignUpView} setSignInView={setSignInView}/> : null
       }
       {
-        signInView ? <SignIn setModalState={setSignInView} setSignUpView={setSignUpView}/> : null
+        signInView ? <SignIn setModalState={setSignInView} setSignUpView={setSignUpView} setRecover={setRecoverView}/> : null
+      }
+      {
+        recoverView ? <RecoverPass setModalState={setRecoverView}/> : null
       }
     </>
   )

@@ -1,0 +1,96 @@
+.modal {
+  .background {
+    background-color: #0B0705;
+    opacity: 0.9;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 200;
+  }
+
+  .modal_block {
+    position: fixed;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 201;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    background: #fff;
+    width: 600px;
+    padding: 70px 0;
+    border-radius: 20px;
+
+    @media (max-width: 768px) {
+      padding: 25px 0;
+    }
+
+    @media (max-width: 610px) {
+      width: 90%;
+    }
+
+    .x {
+      position: absolute;
+      top: 0;
+      right: 0;
+      cursor: pointer;
+    }
+    
+    .change_btns{
+      gap: 20px;
+      width: 400px;
+      padding-bottom: 15px;
+      text-align: center;
+      h2{
+        margin-bottom: 15px;
+      }
+      h2, p{
+        color: #000;
+      }
+    }
+
+    >input{
+      width: 400px;
+      border-radius: 20px;
+      background: #F6F6F6;
+      color: #000;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      padding: 23px 0;
+      padding-left: 20px;
+
+      &::placeholder {
+        color: #000;
+      }
+
+
+      @media (max-width: 470px) {
+        width: 90%;
+      }
+    }
+
+
+    button {
+      width: 400px;
+      border-radius: 20px;
+      background: rgb(205, 84, 0);
+      background: linear-gradient(128deg, rgba(205, 84, 0, 1) 0%, rgba(249, 125, 35, 1) 100%);
+      color: #fff;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      padding: 30px 0;
+
+      @media (max-width: 470px) {
+        width: 90%;
+      }
+    }
+  }
+}
