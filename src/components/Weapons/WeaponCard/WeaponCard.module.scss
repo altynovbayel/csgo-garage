@@ -8,6 +8,47 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  background: rgb(54, 17, 85);
+  background: linear-gradient(130deg, rgba(54, 17, 85, 1) 1%, rgba(25, 8, 57, 1) 50%, rgba(54, 17, 85, 1) 100%);
+
+  &:nth-child(3), 
+  &:nth-child(9),
+  &:nth-child(11),
+  &:nth-child(12) {
+    background: rgb(23, 45, 96);
+    background: linear-gradient(130deg, rgba(23, 45, 96, 1) 1%, rgba(25, 8, 57, 1) 50%, rgba(23, 45, 96, 1) 100%);
+
+    .neonCircle {
+      box-shadow: 0 0 10px #3396BE;
+    }
+  }
+
+  &:nth-child(4), &:nth-child(10) {
+    background: rgb(64, 20, 62);
+    background: linear-gradient(130deg, rgba(64, 20, 62, 1) 1%, rgba(25, 8, 57, 1) 50%, rgba(64, 20, 62, 1) 100%);
+
+    .neonCircle {
+      box-shadow: 0 0 10px #C8405D;
+    }
+  }
+
+  &:nth-child(7) {
+    background: rgb(25, 45, 68);
+    background: linear-gradient(130deg, rgba(25, 45, 68, 1) 1%, rgba(25, 8, 57, 1) 50%, rgba(25, 45, 68, 1) 100%);
+
+    .neonCircle {
+      box-shadow: 0 0 10px #1FDA83;
+    }
+  }
+
+  &:nth-child(8) {
+    background: rgb(80, 37, 48);
+    background: linear-gradient(130deg, rgba(80, 37, 48, 1) 1%, rgba(25, 8, 57, 1) 50%, rgba(80, 37, 48, 1) 100%);
+
+    .neonCircle {
+      box-shadow: 0 0 10px #E9761B;
+    }
+  }
 
   &:hover {
     .about {
@@ -48,21 +89,25 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    >svg{
+
+    >svg {
       position: absolute;
       top: -18px;
       font-size: 20px;
-      
-      path{
+
+      path {
         color: #9830B3;
       }
     }
+
     >img {
       width: 100px;
     }
-    p{
+
+    p {
       padding-bottom: 10px;
     }
+
     .user_name {
       display: flex;
       justify-content: center;
@@ -70,9 +115,11 @@
       gap: 10px;
       border-top: 1px solid #442F6F;
       padding-top: 10px;
-      p{
+
+      p {
         padding: 0;
       }
+
       img {
         width: 35px;
         height: 35px;

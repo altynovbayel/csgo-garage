@@ -1,7 +1,7 @@
 import tg from '../images/nav-icon-2.svg'
 import ig from '../images/nav-icon-3.svg'
 import vk from '../images/nav-icon-1.svg'
-
+import weapon from '../images/weapon.png'
 export const navLinks = [
   {
     id:1,
@@ -20,5 +20,14 @@ export const navLinks = [
     icon: tg,
     title: 'Telegram',
     desc: '16 900',
+  }
+]
+
+const WeaponCardList = [
+  {
+    id:1,
+    image: weapon,
+    circle: '#3294BC',
+    background: ''
   }
 ]
