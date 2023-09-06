@@ -17,17 +17,37 @@
     cursor: pointer;
     transition: .5s;
     border: 1px solid black;
+    position: relative;
 
     &:hover {
-      border: 1px solid gold;
+      border: 1px solid #ED771B;
       background: rgb(60, 27, 51);
       background: linear-gradient(128deg, rgba(60, 27, 51, 1) 0%, rgba(24, 8, 56, 1) 46%, rgba(58, 26, 51, 1) 100%);
 
       .price {
         p {
-          border: 1px solid gold;
+          border: 1px solid #ED771B;
         }
       }
+      span{
+        opacity: 1;
+        z-index: 1;
+      }
+    }
+
+    span {
+      position: absolute;
+      width: 7px;
+      height: 40px;
+      bottom: 40px;
+      background-color: #ED771B;
+      z-index: 10;
+      left: -7px;
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px;
+      opacity: 0;
+      z-index: -1;
+      transition: .5s;
     }
 
     .price {

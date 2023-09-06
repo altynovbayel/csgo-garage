@@ -8,6 +8,7 @@ const AllCases = () => {
       {
         new Array(5).fill().map((_, id) => (
           <div className={c.case} key={id}>
+            <span></span>
             <div className={c.price}>
               <p>0 ₽</p>
             </div>

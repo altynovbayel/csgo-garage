@@ -5,13 +5,15 @@
   align-items: center;
   justify-content: space-between;
   padding: 20px 50px;
-  border: 1px solid;
   border-radius: 20px;
+  background: rgb(58, 20, 89);
+  background: linear-gradient(42deg, rgba(58, 20, 89, 1) 10%, rgba(130, 77, 54, 1) 26%, rgba(49, 70, 117, 1) 36%, rgba(116, 36, 73, 1) 49%, rgba(127, 66, 45, 1) 64%, rgba(57, 101, 78, 1) 71%, rgba(31, 90, 140, 1) 86%, rgba(80, 37, 48, 1) 96%);
 
   .block {
     display: flex;
     align-items: center;
     gap: 20px;
+
     .icon {
       border: 1px solid #fff;
       box-shadow: 0 0 10px #fff;

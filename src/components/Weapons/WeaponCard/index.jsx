@@ -7,9 +7,8 @@ import {BsFillTriangleFill} from 'react-icons/bs'
 
 const WeaponCard = () => {
   return (
-    <div 
-      className={c.card}
-    >
+    <div className={c.card}>
+      <span></span>
       <div className={c.neonCircle}>
         <img src={weapon} alt="weapon" loading='lazy'/>
       </div>

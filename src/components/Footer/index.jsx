@@ -1,6 +1,12 @@
 import React from 'react'
 import c from './Footer.module.scss'
 import logo from '../../images/logo.png'
+import visa from '../../images/visa.svg'
+import masterCard from '../../images/mastercard-2.svg'
+import qiwi from '../../images/qiwi-logo.svg'
+import wm from '../../images/webmoney.svg'
+
+
 const Footer = () => {
   return (
     <div className={c.back}>
@@ -29,6 +35,12 @@ const Footer = () => {
           </div>
           <div className={c.paying}>
             <p>Способ оплаты</p>
+            <div className={c.paying_ways}>
+              <img src={visa} alt="visa" />
+              <img src={masterCard} alt="master" />
+              <img src={qiwi} alt="wiwi" />
+               <img src={wm} alt="wm" />
+            </div>
           </div>
         </div>
       </div>
