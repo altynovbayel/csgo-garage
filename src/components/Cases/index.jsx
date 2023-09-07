@@ -3,12 +3,13 @@ import c from './Cases.module.scss'
 import { Components } from '../index'
 import NavButtons from './NavBtns'
 import AllCases from './AllCases'
+import {MdOutlineKeyboardArrowRight} from 'react-icons/md'
 
 const Cases = () => {
   return (
     <div className={c.cases}>
       <button>
-        Все преддожения
+        Все преддожения <MdOutlineKeyboardArrowRight/>
       </button>
       <div className={c.container_1}>
         <Components.Title text={'Бесплатные кейсы'}/>

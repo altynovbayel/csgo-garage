@@ -2,12 +2,12 @@ import React from 'react'
 import c from './Winners.module.scss'
 import WinnerUser from './WinnerUser'
 import ContestCard from './ContestCard'
-import backIMG1 from '../../images/back-img-1.png'
+import {IoIosArrowDown} from 'react-icons/io'
 
 const Winners = () => {
   return (
     <div className={c.winners}>
-      <button>Быстрый переход </button>
+      <button>Быстрый переход <IoIosArrowDown/> </button>
       <div className={c.container}>
         <div className={c.winner_users}>
           {

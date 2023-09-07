@@ -35,24 +35,39 @@
       }
     }
   }
-  .user_info{
+
+  .user_info {
     margin-top: 15px;
     display: flex;
     align-items: center;
     gap: 10px;
-    img{
+
+    img {
       width: 30px;
       height: 30px;
       border-radius: 50%;
     }
+
+    .user_name {
+      span {
+        color: #39285D;
+      }
+    }
   }
-  .weapon_type{
+
+  .weapon_type {
+    margin-top: 25px;
+
+    span {
+      color: #39285D;
+    }
+  }
+
+  .summ {
     margin-top: 25px;
   }
-  .summ{
-    margin-top: 25px;
-  }
-  .day{
+
+  .day {
     color: #D77022;
     margin-top: 25px;
   }

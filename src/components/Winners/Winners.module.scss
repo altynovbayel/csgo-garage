@@ -9,6 +9,15 @@
     height: 50px;
     border-radius: 20px;
     font-size: 16px;
+    position: relative;
+    svg{
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 30px;
+    }
   }
 
   .container {
