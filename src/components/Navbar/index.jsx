@@ -10,12 +10,14 @@ import flag from '../../images/russia-flag.png'
 import SignUp from './SignUp'
 import SignIn from './SignIn'
 import RecoverPass from './RecoverPass'
+import { useNavigate } from 'react-router-dom'
 
 
 const Navbar = () => {
   const [signUpView, setSignUpView] = React.useState(false)
   const [signInView, setSignInView] = React.useState(false)
   const [recoverView, setRecoverView] = React.useState(false)
+  const navigate = useNavigate()
 
 
   return (
@@ -63,7 +65,7 @@ const Navbar = () => {
                     Регистрация
                   </div>
                 </div>
-                <span>Личный кабинет</span>
+                <span onClick={() => navigate('/profile/')}>Личный кабинет</span>
               </div>
             </div>
             <div className={c.language}>
