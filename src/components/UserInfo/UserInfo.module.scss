@@ -1,8 +1,8 @@
 .info {
   display: flex;
   align-items: center;
-  gap: 100px;
-  padding-top: 100px;
+  gap: 50px;
+  // padding-top: 100px;
 
   .user_img {
     width: 160px;
@@ -44,7 +44,17 @@
     display: flex;
     align-items: center;
     gap: 15px;
-
+    position: relative;
+    padding-left: 50px;
+    &::before{
+      content: '';
+      position: absolute;
+      width: 1px;
+      height: 55px;
+      background-color: #4F4368;
+      left: 0;
+      top: 0;
+    }
     .icon {
       border: 1px solid #fff;
       box-shadow: 0 0 10px #fff;

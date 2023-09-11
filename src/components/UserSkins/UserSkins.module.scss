@@ -1,0 +1,128 @@
+.card {
+  width: 175px;
+  height: 190px;
+  position: relative;
+  background-color: #331052;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  background: rgb(54, 17, 85);
+  background: linear-gradient(130deg, rgba(54, 17, 85, 1) 1%, rgba(25, 8, 57, 1) 50%, rgba(54, 17, 85, 1) 100%);
+  padding-top: 20px;
+  span {
+    position: absolute;
+    width: 5px;
+    height: 30px;
+    bottom: 15px;
+    background-color: #9D33B8;
+    z-index: 10;
+    left: -5px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+
+  &:nth-child(3),
+  &:nth-child(9),
+  &:nth-child(11),
+  &:nth-child(12) {
+    background: rgb(23, 45, 96);
+    background: linear-gradient(130deg, rgba(23, 45, 96, 1) 1%, rgba(25, 8, 57, 1) 50%, rgba(23, 45, 96, 1) 100%);
+
+    span {
+      background-color: #3396BE;
+    }
+
+    .neonCircle {
+      box-shadow: 0 0 10px #3396BE;
+    }
+
+    .about {
+      p {
+        color: #4C5D91;
+      }
+    }
+  }
+
+  &:nth-child(4),
+  &:nth-child(10) {
+    background: rgb(64, 20, 62);
+    background: linear-gradient(130deg, rgba(64, 20, 62, 1) 1%, rgba(25, 8, 57, 1) 50%, rgba(64, 20, 62, 1) 100%);
+
+    span {
+      background-color: #C8405D;
+    }
+
+    .neonCircle {
+      box-shadow: 0 0 10px #C8405D;
+    }
+    .about {
+      p {
+        color: #8B4C59;
+      }
+    }
+  }
+
+  &:nth-child(7) {
+    background: rgb(25, 45, 68);
+    background: linear-gradient(130deg, rgba(25, 45, 68, 1) 1%, rgba(25, 8, 57, 1) 50%, rgba(25, 45, 68, 1) 100%);
+
+    span {
+      background-color: #1FDA83;
+    }
+
+    .neonCircle {
+      box-shadow: 0 0 10px #1FDA83;
+    }
+    .about {
+      p {
+        color: #1FDA83;
+      }
+    }
+  }
+
+  &:nth-child(8) {
+    background: rgb(80, 37, 48);
+    background: linear-gradient(130deg, rgba(80, 37, 48, 1) 1%, rgba(25, 8, 57, 1) 50%, rgba(80, 37, 48, 1) 100%);
+
+    span {
+      background-color: #E9761B;
+    }
+
+    .neonCircle {
+      box-shadow: 0 0 10px #E9761B;
+    }
+    .about {
+      p {
+        color: #E9761B;
+      }
+    }
+  }
+
+  .neonCircle {
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #9D33B8;
+
+    img {
+      width: 100px;
+      position: absolute;
+      top: 10%;
+      left: 20%;
+      object-fit: cover;
+    }
+  }
+
+  .about {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+
+    p {
+      color: #6D52A1;
+    }
+  }
+}

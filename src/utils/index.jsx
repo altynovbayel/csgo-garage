@@ -16,6 +16,11 @@ export const ROUTES = [
     id:2,
     route: '/profile/',
     page: <Pages.Profile/>,
+  },
+  {
+    id:2,
+    route: '/case/',
+    page: <Pages.Case/>,
   }
 ]
 

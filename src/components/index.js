@@ -6,6 +6,8 @@ import Cases from "./Cases";
 import Footer from "./Footer";
 import AboutBlock from "./AboutBlock";
 import UserInfo from "./UserInfo";
+import SkinSearcher from "./SkinSearcher";
+import UserSkins from "./UserSkins";
 
 export const Components = {
   Navbar,
@@ -15,5 +17,7 @@ export const Components = {
   Cases,
   Footer,
   AboutBlock,
-  UserInfo
+  UserInfo,
+  SkinSearcher,
+  UserSkins,
 }
