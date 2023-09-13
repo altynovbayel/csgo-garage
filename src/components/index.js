@@ -8,6 +8,7 @@ import AboutBlock from "./AboutBlock";
 import UserInfo from "./UserInfo";
 import SkinSearcher from "./SkinSearcher";
 import UserSkins from "./UserSkins";
+import OpenedCase from "./OpenedCase";
 
 export const Components = {
   Navbar,
@@ -20,4 +21,5 @@ export const Components = {
   UserInfo,
   SkinSearcher,
   UserSkins,
+  OpenedCase,
 }
